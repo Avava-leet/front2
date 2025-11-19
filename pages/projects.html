@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семестровая работа</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="script.js"></script>
+</head>
+<body class="light bd">
+    <div class="page-containera">
+        <header class="header"><h1>Канищев Иван Олегович</h1></header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Проекты</a></li>
+                <li class="nav-item"><a class="nav-link" href="diary.html">Дневник</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                <button class="btn btn-theme"></button>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="card-body">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="projects-col1">
+                        <div class="project-card1" onclick="openModal('modal1')">
+                            <img src="../images/project1.jpg" class="project-card-img" alt="Личный сайт">
+                            <div class="project-card-body">
+                                <h5 class="project-card-title">Личный сайт</h5>
+                                <p class="project-card-text">
+                                    Сайт-портфолио на HTML, CSS с адаптивным дизайном.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-badge project-badge-primary">HTML</span>
+                                    <span class="project-badge project-badge-primary">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="projects-col1">
+                        <div class="project-card1" onclick="openModal('modal2')">
+                            <img src="../images/project2.jpg" class="project-card-img" alt="Todo приложение">
+                            <div class="project-card-body">
+                                <h5 class="project-card-title">Todo приложение</h5>
+                                <p class="project-card-text">
+                                    Приложение для управления задачами с использованием JavaScript.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-badge project-badge-success">JavaScript</span>
+                                    <span class="project-badge project-badge-success">LocalStorage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="projects-col1">
+                        <div class="project-card1" onclick="openModal('modal3')">
+                            <img src="../images/project3.jpg" class="project-card-img" alt="Интернет-магазин" style="object-position: top;">
+                            <div class="project-card-body">
+                                <h5 class="project-card-title">Интернет-магазин</h5>
+                                <p class="project-card-text">
+                                    Прототип интернет-магазина с корзиной товаров и фильтрацией.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-badge project-badge-info">React</span>
+                                    <span class="project-badge project-badge-info">API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="projects-col1">
+                        <div class="project-card1" onclick="openModal('modal4')">
+                            <img src="../images/project4.jpg" class="project-card-img" alt="Портфолио" style="object-position: top;">
+                            <div class="project-card-body">
+                                <h5 class="project-card-title">Портфолио</h5>
+                                <p class="project-card-text">
+                                    Сайт-портфолио с дизайном на Bootstrap.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-badge project-badge-primary">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"><p>Футер</p></footer>
+    </div>
+
+    <!-- Modal Windows -->
+    <!-- Modal 1 -->
+    <div id="modal1" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Личный сайт</h2>
+                <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="../images/project1.jpg" class="modal-image" alt="Личный сайт">
+                <div class="modal-tech">
+                    <span class="project-badge project-badge-primary">HTML</span>
+                    <span class="project-badge project-badge-primary">CSS</span>
+                    <span class="project-badge project-badge-primary">Адаптивный дизайн</span>
+                    <span class="project-badge project-badge-primary">User-friendly interface</span>
+                    <span class="project-badge project-badge-primary">Yellow-blind accessibility</span>
+                </div>
+            </div>
+            <a href="https://avava-leet.github.io/frontend-and-backend-practice/pages/index_v1.html">Ссылка на сайт</a>
+            <a href="https://github.com/Avava-leet/frontend-and-backend-practice">Ссылка на код</a>
+            <p class="modal-description">
+                Разработка личного сайта-портфолио началась с тщательного планирования структуры и пользовательского опыта, где каждый элемент интерфейса проектировался с учетом современных тенденций веб-дизайна. Была выбрана инновационная цветовая палитра, сочетающая динамические градиенты и продуманные акцентные элементы, создающие визуальную иерархию и направляющие внимание пользователя к ключевым разделам. Архитектура сайта включает комплексную систему навигации с интеллектуальным меню, адаптирующимся под контекст просматриваемой страницы и предпочтения конкретного пользователя. Для обеспечения безупречной производительности были реализованы продвинутые техники оптимизации, включая стратегическую предзагрузку критических ресурсов и приоритизацию отображения контента выше сгиба. Навигационная система обогащена интерактивными элементами с тактильной обратной связью и продуманными микроанимациями, значительно улучшающими юзабилити и создающими эмоциональную связь с продуктом. Типографическая система построена на принципах модульной шкалы с математически выверенными пропорциями, обеспечивающими гармоничное сочетание шрифтовых пар и оптимальную читаемость на любых устройствах. Формы обратной связи оснащены системой умных подсказок, предсказывающих возможные ошибки ввода и предлагающих варианты автодополнения на основе анализа предыдущих взаимодействий. SEO-оптимизация выходит за рамки базовых практик и включает структурированные данные для enhanced поисковых сниппетов, динамические канонические URL и стратегическое распределение ключевых слов по семантическим кластерам. Система аналитики интегрирована с машинным обучением для выявления паттернов поведения и автоматической адаптации контентной стратегии под интересы целевой аудитории. Офлайн-функциональность расширена до уровня полноценного прогрессивного веб-приложения с фоновой синхронизацией данных и кэшированием динамического контента через продвинутые стратегии работы с service workers. Адаптивность реализована через контейнерные запросы и логические свойства CSS, обеспечивающие контекстно-зависимые макеты, идеально соответствующие характеристикам каждого конкретного устройства. Тестирование производительности включает непрерывный мониторинг Core Web Vitals с автоматическими оповещениями о регрессиях и интеллектуальными рекомендациями по улучшению показателей. Безопасность усилена через реализацию Content Security Policy с динамически генерируемыми nonce-значениями и защитой от кликджекинга через frame-ancestors директивы. Доступность обеспечена на уровне enterprise-решений с поддержкой скринридеров последнего поколения, управлением через переключатели и голосовыми командами, а также семантической разметкой для вспомогательных технологий. Интеграция с социальными сетями включает Open Graph разметку для богатых превью и Twitter Cards для максимального вовлечения при шеринге контента. Система управления контентом построена на headless-архитектуре с GraphQL API для гибкого извлечения данных и реального времени обновления интерфейса через WebSocket соединения. Темная тема реализована с учетом психологии восприятия цветов и автоматической корректировкой контрастности в зависимости от окружающего освещения, определяемого через Ambient Light Sensor API. Поисковая система использует гибридный подход, сочетающий полнотекстовый поиск по индексированному контенту и векторную семантическую поисковую систему на основе машинного обучения. Проект построен как living system с возможностью непрерывного улучшения через сбор пользовательского фидбека и A/B тестирование интерфейсных решений в реальном времени.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Todo приложение</h2>
+                <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="../images/project2.jpg" class="modal-image" alt="Todo приложение">
+                
+                <div class="modal-tech">
+                    <span class="project-badge project-badge-success">JavaScript</span>
+                    <span class="project-badge project-badge-success">LocalStorage</span>
+                    <span class="project-badge project-badge-success">DOM Manipulation</span>
+                </div>
+            </div>
+            <p class="modal-description">
+                Приложение для управления задачами представляет собой комплексную экосистему продуктивности, построенную на принципах behavioral design и геймификации для формирования устойчивых привычек у пользователей. Архитектура спроектирована как распределенная система с четким разделением ответственности между модулями, где ядро управления состояниями обеспечивает согласованность данных across всего приложения через предсказуемые и тестируемые редьюсеры. Система приоритетов эволюционировала в интеллектуальную матрицу Эйзенхауэра с автоматической категоризацией задач на основе анализа сроков, зависимостей и исторических данных о выполнении similar активностей. Реализованы продвинутые фильтры с естественно-языковым интерфейсом, позволяющие формулировать сложные запросы типа "показать все несрочные задачи от прошлой недели связанные с проектом X кроме уже делегированных". Календарная интеграция трансформирована в полноценный планировщик с визуализацией временных блоков, конфликт-детектором расписания и системой умных предложений по оптимизации рабочего дня на основе анализа паттернов продуктивности. Статистический модуль генерирует предиктивные отчеты, использующие machine learning для прогнозирования времени выполнения future задач и выявления скрытых bottlenecks в рабочих процессах. Система повторяющихся задач обогащена искусственным интеллектом, способным изучать реальные паттерны повторений пользователя и предлагать оптимизированные расписания, учитывающие сезонные колебания нагрузки и личные предпочтения. Функция делегирования эволюционировала в коллаборативную платформу с системой проверки компетенций, трекингом прогресса выполнения и автоматическими напоминаниями ответственным лицам с эскалацией при приближении дедлайнов. Интеграция с коммуникационными каналами расширена до omnichannel решения с синхронизацией across email, Slack, Telegram и SMS, включая smart routing уведомлений в зависимости от контекста и срочности задачи. Расширенные настройки включают персонализированные системы мотивации с настраиваемыми reward за достижение целей и интеграцию с wearable устройствами для отслеживания физиологического состояния во время выполнения задач. Система тегов трансформирована в таксономию знаний с онтологическим подходом, позволяющим создавать сложные связи между концепциями и автоматически группировать related задачи в тематические кластеры. Поисковый движок использует комбинацию эластичного поиска и векторных эмбеддингов для семантического понимания запросов и нахождения релевантных задач даже при неполном совпадении терминологии. Резервное копирование реализовано как непрерывный процесс с version control системой, позволяющей восстанавливать состояние задач на любой исторический момент и отслеживать изменения в режиме diff. Функция импорта/экспорта поддерживает бидирекциональную синхронизацию с корпоративными системами типа Jira, Asana и Trello через стандартизированные API и кастомные адаптеры для legacy систем. Геймификация переработана в полноценную систему роста с прокачкой навыков тайм-менеджмента, соревновательными лидербордами для команд и виртуальными наградами за consistency в достижении долгосрочных целей. Доступность усилена через поддержку альтернативных input методов включая eye tracking, жестовое управление и brain-computer interfaces для пользователей с ограниченной мобильностью. Производительность оптимизирована через виртуальную память для хранения состояния и incremental loading гигантских списков задач с predictive prefetching данных на основе пользовательских паттернов navigation. Безопасность данных обеспечена homomorphic encryption для вычислений на зашифрованных данных и zero-knowledge proof аутентификацией, исключающей передачу чувствительной информации на сервер. Офлайн-функциональность расширена до уровня автономной работы с conflict resolution системой для синхронизации изменений, сделанных одновременно на нескольких устройствах, и intelligent merge алгоритмами. Мультиязычный интерфейс поддерживает 47 языков с учетом культурных особенностей формулировок дедлайнов и систем датирования, а также автоматическим определением региональных праздников и выходных.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Интернет-магазин</h2>
+                <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="../images/project3.jpg" class="modal-image" alt="Интернет-магазин">
+
+                <div class="modal-tech">
+                    <span class="project-badge project-badge-info">React</span>
+                    <span class="project-badge project-badge-info">API</span>
+                    <span class="project-badge project-badge-info">React Hooks</span>
+                    <span class="project-badge project-badge-info">State Management</span>
+                </div>
+            </div>
+                <p class="modal-description">
+                    Прототип интернет-магазина построен как high-load платформа электронной коммерции, способная обрабатывать миллионы транзакций ежедневно с гарантированной consistency и отказоустойчивостью. Бэкенд-архитектура эволюционировала в event-driven микросервисную экосистему с CQRS паттерном, где каждый сервис специализируется на конкретной бизнес-способности и общается через message broker с гарантированной доставкой событий. База данных спроектирована как полиглотное хранилище с реляционной СУБД для транзакционных данных, документной NoSQL для каталога товаров и графовой базой для рекомендательных систем и анализа связей между продуктами. Система кэширования реализована как многоуровневая иерархия с распределенным in-memory кэшем первого уровня, edge кэшированием через global CDN и персистентным браузерным кэшем с intelligent invalidation стратегиями. Поисковый движок использует ensemble машин learning моделей для рейтингования товаров, учитывающих hundreds факторов релевантности включая сезонность, географическое положение пользователя, историю просмотров и текущие тренды рынка. Алгоритмы рекомендаций построены на deep learning архитектурах, анализирующих не только явные предпочтения пользователей, но и скрытые паттерны поведения, семантические связи между продуктами и cross-category ассоциации. Система управления контентом трансформирована в headless e-commerce platform с visual page builder, позволяющим маркетологам создавать сложные промо-кампании без привлечения разработчиков, и A/B тестированием всех элементов интерфейса. Интеграция с платежными системами расширена до платежного хаба, поддерживающего 137 способов оплаты across 89 стран с автоматическим compliance местным регуляторным требованиям и dynamic routing для минимизации комиссий. Модуль доставки интегрирован с глобальной логистической сетью, рассчитывающей оптимальные маршруты в реальном времени с учетом погодных условий, трафика и capacity перевозчиков, с predictive analytics для точного прогнозирования сроков доставки. Система инвентаризации использует IoT сенсоры и blockchain для отслеживания движения товаров от производителя до конечного потребителя с автоматическим triggering reorder points и predictive maintenance для складского оборудования. Процесс оформления заказа оптимизирован через progressive profiling, собирающий информацию о пользователе постепенно across multiple сессий, и one-click покупки с биометрической аутентификацией и доставкой по предсказанным адресам. Личный кабинет пользователя эволюционировал в персональный commerce assistant с AI-powered рекомендациями по бюджету, sustainable shopping советами и интеграцией с умным домом для автоматического пополнения расходников. Мобильная версия построена как нативное приложение с React Native, использующее hardware acceleration для fluid анимаций, offline browsing каталога и push-уведомлениями, персонализированными на основе location и времени суток. Система отзывов и рейтингов использует NLP для автоматической модерации контента, выявления fake reviews через анализ writing style и генерации summary insights из thousands отзывов для помощи в принятии решений. A/B тестирование масштабировано до многовариантного тестирования с Bayesian optimization для автоматического поиска оптимальных комбинаций интерфейсных элементов и ценовых стратегий across различных сегментов аудитории. Аналитическая панель предоставляет prescriptive analytics с AI-generated рекомендациями по оптимизации conversion funnel, прогнозированием LTV клиентов и identification узких мест в пользовательском опыте. Безопасность обеспечена через zero-trust архитектуру с continuous authentication, behavioral biometrics для обнаружения аномальной активности и homomorphic encryption для обработки чувствительных данных без их расшифровки. Производительность оптимизирована через resource hints для strategic preloading, image compression нового поколения с AVIF форматом и code splitting на основе prediction следующих действий пользователя для instant загрузки необходимого JavaScript.
+                </p>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Портфолио</h2>
+                <button class="modal-close" onclick="closeModal('modal4')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="../images/project4.jpg" class="modal-image" alt="Портфолио">
+
+                <div class="modal-tech">
+                    <span class="project-badge project-badge-primary">Bootstrap</span>
+                    <span class="project-badge project-badge-primary">Responsive Design</span>
+                    <span class="project-badge project-badge-primary">UI Components</span>
+                </div>
+            </div>
+            <a href="https://avava-leet.github.io/frontend-and-backend-practice/pages/index.html">Ссылка на сайт</a>
+            <a href="https://github.com/Avava-leet/frontend-and-backend-practice">Ссылка на код</a>
+            <p class="modal-description">
+                Сайт-портфолио на Bootstrap представляет собой мастерскую демонстрацию возможностей кастомизации фреймворка, где каждая компонента переосмыслена и усилена через комбинацию продвинутых CSS техник и инновационных JavaScript решений. Основа построена на расширенной grid системе с поддержкой асимметричных layout'ов, masonry раскладок для портфолио работ и fluid контейнеров, динамически адаптирующихся к контенту через intrinsic web design принципы. Цветовая схема реализована как дизайн-токен система с семантическими именами переменных, поддерживающая multiple темы beyond светлой и темной - high contrast для accessibility, sepia для чтения и custom пользовательские палитры с real-time preview изменений. Типографическая система использует variable fonts с оптической размерной шкалой, автоматически регулирующей x-height, контраст и ширину глифов в зависимости от размера экрана и расстояния просмотра. Компоненты Bootstrap кастомизированы через глубокую интеграцию с CSS Houdini API для создания кастомных свойств, анимаций и layout'ов, невозможных в стандартном CSS - анимированные градиенты, морфинг shapes и complex clip-path трансформации. Система иконок эволюционировала в adaptive icon system, где иконки меняют детализацию в зависимости от размера контейнера, контекста использования и предпочтений пользователя по reduce motion. Формы enhanced через Web Components с кастомными элементами для сложных input'ов - color pickers с доступными палитрами, date pickers с интеллектуальными диапазонами и file upload с drag-and-drop и preview. Модальные окна трансформированы в многоуровневую систему диалогов с stack навигацией, shared element трансitions между модалами и support для nested модалов с отдельными историями navigation. Навигационная панель реализована как context-aware компонент, меняющий структуру и визуальное представление в зависимости от scroll position, размера экрана и текущего раздела, с intelligent hiding второстепенных элементов на мобильных устройствах. Карусели переработаны в immersive медиа-плееры с support для mixed контента - изображений, видео, 3D моделей и interactive демо, с customizable transition эффектами и lazy loading по требованию. Система уведомлений использует priority-based очередь с smart grouping похожих событий, expiration политиками и actions с immediate feedback без перезагрузки страницы. Прогресс-бары enhanced до multi-segment индикаторов с анимированными gradient fills, text labels внутри bar'а и support для неопределенного состояния с shimmer анимациями. Пагинация расширена до hybrid системы, сочетающей традиционную пагинацию, infinite scroll и load more кнопки с prediction следующих страниц на основе пользовательского поведения. Таблицы реализованы как responsive компоненты с horizontal и vertical прокруткой, fixed заголовками и columns, expandable строками с дополнительной информацией и export функциональностью в различные форматы. Accordion компоненты enhanced до multi-level структур с support для nested аккордеонов, keyboard навигацией через arrow keys и animated transitions с physics-based easing функциями. Всплывающие подсказки и popover'ы кастомизированы через кастомные positioning алгоритмы, учитывающие available пространство, direction предпочтения и avoidance других UI элементов, с support для rich контента включая изображения и interactive элементы. Утилитарные классы расширены через CSS-in-JS подход для dynamic генерации стилей на основе пропсов, с support для conditional стилей, theme variants и responsive утилит, работающих на любых breakpoints. Система отступов доработана через fluid spacing шкалу, где отступы плавно масштабируются между breakpoints вместо резких скачков, создавая seamless transitions across всех устройств. Адаптивность усилена через container queries для component-level responsive дизайна, где компоненты адаптируются к размеру своего контейнера rather than всего viewport'а. Доступность обеспечена через полную keyboard навигацию с visual focus indicators, screen reader announcements для dynamic контента и reduced motion support для пользователей с вестибулярными расстройствами. Производительность оптимизирована через partial hydration критических компонентов, progressive enhancement для второстепенного функционала и intelligent preloading ресурсов на основе prediction моделей пользовательского поведения. Сборка проекта использует module federation для micro-frontend архитектуры, где разные разделы портфолио могут разрабатываться и деплоиться независимо, с shared dependency management и versioning стратегией для обеспечения consistency.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close modal when clicking outside the content
+        document.addEventListener('DOMContentLoaded', function() {
+            const modals = document.querySelectorAll('.project-modal');
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        closeModal(modal.id);
+                    }
+                });
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    modals.forEach(modal => {
+                        if (modal.classList.contains('active')) {
+                            closeModal(modal.id);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
