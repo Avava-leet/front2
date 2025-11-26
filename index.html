@@ -2,15 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewportfit=cover">
     <title>Семестровая работа</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="script.js"></script>
 </head>
 <body class="light bd">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
     <div class="page-containera">
         <header class="header"><h1>Канищев Иван Олегович</h1></header>
-        <nav class="nav">
+        <nav class="nav" aria-label="Основная навигация">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/projects.html">Проекты</a></li>
@@ -21,10 +23,21 @@
             
         </nav>
 
-        <main class="content">
+        <main id="main" class="main content">
             <article class="profile-header">
                 <div class="group">
-                    <img class="profile-photo" src="../images/photo.jpg" alt="Фото автора">
+                    <figure class="hero__image">
+                        <picture>
+                            <img class="hero__photo"
+                            src="images/photo.jpg"
+                            srcset="images/photo.jpg 150w, images/photo.jpg 200w,
+                            images/photo.jpg 300w"
+                            sizes="200px"
+                            width="200" height="200"
+                            alt="Портрет студента"
+                            fetchpriority="high">
+                        </picture>
+                    </figure>
                     <div class="group1">
                         <h1 class="profile-title">Привет! Я студент группы ЭФБО-02-24, увлекаюсь веб-разработкой</h1>
                         <button type="submit" class="btn btn-primary btn-d">Скачать резюме</button>
@@ -61,11 +74,13 @@
             
                 
                     <h2 class="section-title">Лучшие проекты</h2>
+                    <section class="projects-area">
+ <div class="projects-list">
                     <div class="card-body">
                         <div class="projects-grid">
                             <div class="projects-col">
                                 <div class="project-card">
-                                    <img src="../images/project4.jpg" class="project-card-img" alt="Личный сайт">
+                                    <img src="images/project4.jpg" class="project-card-img" alt="Личный сайт">
                                     <div class="project-card-body">
                                         <h5 class="project-card-title">Личный сайт</h5>
                                         <p class="project-card-text">
@@ -81,7 +96,7 @@
                             </div>
                             <div class="projects-col">
                                 <div class="project-card">
-                                    <img src="../images/project2.jpg" class="project-card-img" alt="Todo приложение">
+                                    <img src="images/project2.jpg" class="project-card-img" alt="Todo приложение">
                                     <div class="project-card-body">
                                         <h5 class="project-card-title">Todo приложение</h5>
                                         <p class="project-card-text">
@@ -96,7 +111,7 @@
                             </div>
                             <div class="projects-col">
                                 <div class="project-card">
-                                    <img src="../images/project3.jpg" class="project-card-img" alt="Интернет-магазин" style="object-position: top;">
+                                    <img src="images/project3.jpg" class="project-card-img" alt="Интернет-магазин" style="object-position: top;">
                                     <div class="project-card-body">
                                         <h5 class="project-card-title">Интернет-магазин</h5>
                                         <p class="project-card-text">
@@ -111,7 +126,8 @@
                             </div>
                         </div>
                     </div>
-                
+                 </div>
+</section>
             
         </main>
         <footer class="footer"><p>Футер</p></footer>
